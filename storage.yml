@@ -1,0 +1,55 @@
+Storage:
+  type: 'yaml' #mysql/yaml/sqlite
+  mysql:
+    host: 'localhost'
+    user: 'root'
+    pass: 'Trlp7s9O'
+    port: 3306
+    base: 'skyblock'
+  databases:
+    clan_table: 'uclans-clans'
+    player_table: 'uclans-players'
+    holograms_table: 'uclans-holos'
+    bases_table: 'uclans-bases'
+  tables:
+    uclans-bases:
+      id: 'u_id'
+      type: 'u_type'
+      owner: 'u_owner'
+      chunks: 'u_chunks'
+    uclans-clans:
+      id: 'u_id'
+      tag: 'u_tag'
+      tag_raw: 'u_tag_raw'
+      desc: 'u_desc'
+      leader: 'u_leader'
+      verified: 'u_verified'
+      home: 'u_home'
+      creation_date: 'u_creation_date'
+      members: 'u_members'
+      online_members: 'u_online_members'
+      mods: 'u_mods'
+      rival: 'u_rival'
+      ally: 'u_ally'
+      kills: 'u_kills'
+      deaths: 'u_deaths'
+      souls: 'u_souls'
+      kdr: 'u_kdr'
+      ff: 'u_ff'
+    uclans-players:
+      id: 'u_id'
+      name: 'u_name'
+      uuid: 'u_uuid'
+      clan_id: 'u_clan_id'
+      kills: 'u_kills'
+      deaths: 'u_deaths'
+      souls: 'u_souls'
+      kdr: 'u_kdr'
+      join_date: 'u_join_date'
+      last_seen: 'u_last_seen'
+    uclans-holos:
+      id: 'u_id'
+      world: 'u_world'
+      x: 'u_x'
+      y: 'u_y'
+      z: 'u_z'
