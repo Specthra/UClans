@@ -10,7 +10,7 @@ Commands:
               click_type: ''
               click_action: ''
       text:
-        permission: 'UClans.command.admin'
+        permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: ''
         show:
@@ -37,7 +37,7 @@ Commands:
               click_type: ''
               click_action: ''
       text:
-        permission: 'UClans.command.admin'
+        permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: ''
         show:
@@ -64,7 +64,7 @@ Commands:
               click_type: ''
               click_action: ''
       text:
-        permission: 'UClans.command.admin'
+        permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: ''
         show:
@@ -91,7 +91,7 @@ Commands:
               click_type: ''
               click_action: ''
       text:
-        permission: 'UClans.command.admin'
+        permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: ''
         show:
@@ -118,7 +118,7 @@ Commands:
               click_type: ''
               click_action: ''
       text:
-        permission: 'UClans.command.admin'
+        permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: ''
         show:
@@ -138,7 +138,7 @@ Commands:
               click_action: ''
     clan:
       separer4:
-        permission: 'UClans.command.admin'
+        permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: ''
         show:
@@ -148,7 +148,7 @@ Commands:
               click_type: ''
               click_action: ''
       help:
-        permission: 'uclans.player'
+        permission: 'uclans.player.help'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'ajuda'
         show:
@@ -175,7 +175,7 @@ Commands:
             on_success: ''
             on_error: ''
       create:
-        permission: 'uclans.player'
+        permission: 'uclans.player.create'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'criar'
         show:
@@ -202,7 +202,7 @@ Commands:
             on_success: '&aCreated a new clan &f%clan_tag%&a with tag &b%clan_desc%'
             on_error: '&cError, Try again...'
       desc:
-        permission: 'uclans.player'
+        permission: 'uclans.player.desc'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'desc'
         show:
@@ -229,7 +229,7 @@ Commands:
             on_success: '&aDescription changed to &b%clan_desc%'
             on_error: '&cError, Try again...'
       disband:
-        permission: 'uclans.player'
+        permission: 'uclans.player.disband'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'debandar'
         show:
@@ -248,7 +248,7 @@ Commands:
               volume: 10
               pitch: 1
       leave:
-        permission: 'uclans.player'
+        permission: 'uclans.player.leave'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'sair'
         show:
@@ -267,7 +267,7 @@ Commands:
               volume: 10
               pitch: 1
       invite:
-        permission: 'uclans.player'
+        permission: 'uclans.player.invite'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'convidar'
         show:
@@ -279,7 +279,7 @@ Commands:
             on_success: '%tag% &eAn invitation has been sent to the player, please wait!'
             on_error: '%tag% &cUse &b/clan invite <player>'
       join:
-        permission: 'uclans.player'
+        permission: 'uclans.player.join'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'entrar'
         show:
@@ -298,7 +298,7 @@ Commands:
               volume: 10
               pitch: 1
       deny:
-        permission: 'uclans.player'
+        permission: 'uclans.player.deny'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'negar'
         show:
@@ -317,7 +317,7 @@ Commands:
               volume: 10
               pitch: 1
       kick:
-        permission: 'uclans.player'
+        permission: 'uclans.player.kick'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'remover'
         show:
@@ -336,7 +336,7 @@ Commands:
               volume: 10
               pitch: 1
       promote:
-        permission: 'uclans.player'
+        permission: 'uclans.player.promote'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'promover'
         show:
@@ -355,7 +355,7 @@ Commands:
               volume: 10
               pitch: 1
       demote:
-        permission: 'uclans.player'
+        permission: 'uclans.player.demote'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'demote'
         show:
@@ -374,7 +374,7 @@ Commands:
               volume: 10
               pitch: 1
       sethome:
-        permission: 'uclans.player'
+        permission: 'uclans.player.sethome'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'setarcasa'
         show:
@@ -393,7 +393,7 @@ Commands:
               volume: 10
               pitch: 1
       home:
-        permission: 'uclans.player'
+        permission: 'uclans.player.home'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'casa'
         show:
@@ -412,7 +412,7 @@ Commands:
               volume: 10
               pitch: 1
       chat:
-        permission: 'uclans.player'
+        permission: 'uclans.player.chat'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'info'
         show:
@@ -431,7 +431,7 @@ Commands:
               volume: 10
               pitch: 1
       ff:
-        permission: 'uclans.player'
+        permission: 'uclans.player.ff'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'info'
         show:
@@ -450,7 +450,7 @@ Commands:
               volume: 10
               pitch: 1
       modtag:
-        permission: 'uclans.player'
+        permission: 'uclans.player.modtag'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'mudartag'
         show:
@@ -469,7 +469,7 @@ Commands:
               volume: 10
               pitch: 1
       separer3:
-        permission: 'UClans.command.admin'
+        permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: ''
         show:
@@ -479,7 +479,7 @@ Commands:
               click_type: ''
               click_action: ''
       list:
-        permission: 'uclans.player'
+        permission: 'uclans.player.list'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'listar'
         show:
@@ -498,7 +498,7 @@ Commands:
               volume: 10
               pitch: 1
       info:
-        permission: 'uclans.player'
+        permission: 'uclans.player.info'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'info'
         show:
@@ -517,7 +517,7 @@ Commands:
               volume: 10
               pitch: 1
       stats:
-        permission: 'uclans.player'
+        permission: 'uclans.player.stats'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'status'
         show:
@@ -536,7 +536,7 @@ Commands:
               volume: 10
               pitch: 1
       profile:
-        permission: 'uclans.player'
+        permission: 'uclans.player.profile'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'perfil'
         show:
@@ -555,7 +555,7 @@ Commands:
               volume: 10
               pitch: 1
       separer2:
-        permission: 'UClans.command.admin'
+        permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: ''
         show:
@@ -565,7 +565,7 @@ Commands:
               click_type: ''
               click_action: ''
       rival:
-        permission: 'uclans.player'
+        permission: 'uclans.player.rival'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'rival'
         show:
@@ -584,7 +584,7 @@ Commands:
               volume: 10
               pitch: 1
       rivalries:
-        permission: 'uclans.player'
+        permission: 'uclans.player.rivalries'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'rivalidades'
         show:
@@ -603,7 +603,7 @@ Commands:
               volume: 10
               pitch: 1
       ally:
-        permission: 'uclans.player'
+        permission: 'uclans.player.ally'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'aliado'
         show:
@@ -622,7 +622,7 @@ Commands:
               volume: 10
               pitch: 1
       alliances:
-        permission: 'uclans.player'
+        permission: 'uclans.player.alliances'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'aliancas'
         show:
@@ -641,7 +641,7 @@ Commands:
               volume: 10
               pitch: 1
       separer1:
-        permission: 'uclans.player'
+        permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: ''
         show:
@@ -651,7 +651,7 @@ Commands:
               click_type: ''
               click_action: ''
       rtp:
-        permission: ''
+        permission: 'uclans.player.rtp'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'random'
         show:
@@ -670,7 +670,7 @@ Commands:
               volume: 10
               pitch: 1
       landinfo:
-        permission: ''
+        permission: 'uclans.player.landinfo'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'landinfo'
         show:
@@ -689,7 +689,7 @@ Commands:
               volume: 10
               pitch: 1
       base:
-        permission: ''
+        permission: 'uclans.player.base'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'base'
         show:
@@ -708,7 +708,7 @@ Commands:
               volume: 10
               pitch: 1
       claim:
-        permission: ''
+        permission: 'uclans.player.claim'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'claim'
         show:
@@ -727,7 +727,7 @@ Commands:
               volume: 10
               pitch: 1
       unclaimall:
-        permission: ''
+        permission: 'uclans.player.unclaimall'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'unclaimall'
         show:
@@ -746,7 +746,7 @@ Commands:
               volume: 10
               pitch: 1
       unclaim:
-        permission: ''
+        permission: 'uclans.player.unclaim'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'unclaim'
         show:
@@ -765,7 +765,7 @@ Commands:
               volume: 10
               pitch: 1
       landlist:
-        permission: ''
+        permission: 'uclans.player.landlist'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'landlist'
         show:
@@ -783,28 +783,9 @@ Commands:
             extra:
               volume: 10
               pitch: 1
-      war:
-        permission: 'uclans.player'
-        no_permission_message: '%tag% &cYou dont have permission for this.'
-        alias: 'guerra'
-        show:
-            on_help: ' &6/clan war <tag> &7-&6 Invite a clan to war.'
-            on_help_json:
-              hover_text: '&aClick to send invite.'
-              click_type: 'SUGGEST_COMMAND'
-              click_action: '/clan war <tag>'
-            on_success: '%tag% &aYou sent the invitation, wait for the answer!!'
-            on_error: '%tag% &cUse &6/clan war <tag>'
-        sound:
-            on_help: ''
-            on_success: ''
-            on_error: ''
-            extra:
-              volume: 10
-              pitch: 1
     uclan:
       separer2:
-        permission: 'UClans.command.admin'
+        permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: ''
         show:
@@ -814,7 +795,7 @@ Commands:
               click_type: ''
               click_action: ''
       spawnholo:
-        permission: 'UClans.command.admin'
+        permission: 'uclans.admin.spawnholo'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'spawnholo'
         show:
@@ -834,7 +815,7 @@ Commands:
               volume: 10
               pitch: 1
       despawnholo:
-        permission: 'UClans.command.admin'
+        permission: 'uclans.admin.despawnholo'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'spawnholo'
         show:
@@ -854,7 +835,7 @@ Commands:
               volume: 10
               pitch: 1
       listholos:
-        permission: 'UClans.command.admin'
+        permission: 'uclans.admin.listholos'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'listholos'
         show:
@@ -874,7 +855,7 @@ Commands:
               volume: 10
               pitch: 1
       tpholo:
-        permission: 'UClans.command.admin'
+        permission: 'uclans.admin.tpholo'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'tpholo'
         show:
@@ -894,7 +875,7 @@ Commands:
               volume: 10
               pitch: 1
       reloadholos:
-        permission: 'UClans.command.admin'
+        permission: 'uclans.admin.reloadholos'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'reloadholos'
         show:
@@ -914,7 +895,7 @@ Commands:
               volume: 10
               pitch: 1
       separer1:
-        permission: 'UClans.command.admin'
+        permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: ''
         show:
@@ -924,7 +905,7 @@ Commands:
               click_type: ''
               click_action: ''
       help:
-        permission: 'UClans.command.admin'
+        permission: 'uclans.admin.help'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'ajuda'
         show:
@@ -952,7 +933,7 @@ Commands:
             on_success: ''
             on_error: ''
       globalff:
-        permission: 'UClans.command.admin'
+        permission: 'uclans.admin.globalff'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'deletar'
         show:
@@ -972,7 +953,7 @@ Commands:
               volume: 10
               pitch: 1
       delete:
-        permission: 'UClans.command.admin'
+        permission: 'uclans.admin.delete'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'deletar'
         show:
@@ -992,7 +973,7 @@ Commands:
               volume: 10
               pitch: 1
       verify:
-        permission: 'UClans.command.admin'
+        permission: 'uclans.admin.verify'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'verificar'
         show:
@@ -1012,7 +993,7 @@ Commands:
               volume: 10
               pitch: 1
       rtp:
-        permission: ''
+        permission: 'uclans.admin.rtp'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'random'
         show:
@@ -1031,7 +1012,7 @@ Commands:
               volume: 10
               pitch: 1
       reload:
-        permission: 'UClans.command.admin'
+        permission: 'uclans.admin.reload'
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'recarregar'
         show:
