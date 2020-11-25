@@ -7,10 +7,6 @@ Config:
   logs:
     clan: true
     stacktrace: true
-
-#Permissions:
-#UClans.command.bypass - Bypass command in worlds
-#UClans.command.admin - List an execute commands of admins
 #
 #Placeholders with PlaceholderAPI:
 # %uclans_hasclan%
@@ -62,6 +58,7 @@ Events:
 Survival_mode: #terrains
   enabled: true
   clan_bases: true
+  only_edit_claimed: true
   chunks_start_clan: 4
   chunks_by_player: 1
   chunks_max_clan: 10
@@ -70,13 +67,12 @@ Survival_mode: #terrains
   use_material_claim: true
   use_material_claim_all: false
   material_claim: 'TORCH'
+  bypass_permission_edit: 'player.bypass.perm.edit' #Edit all terrains, protected or not. Permission for STAFFS.
   rtp:
     enabled: true
     use_delay: 120
     rangemax: 2500
     rangemin: -2500
-  bypass_permission_break: 'player.bypass.perm.break'
-  bypass_permission_place: 'player.bypass.perm.place'
   Title:
     chunks:
       enabled: true
@@ -150,11 +146,29 @@ Clan:
       add: 'add'
       remove: 'remove'
   prices:
-    create: 1000000.0
-    invite: 500000.0
-    claim: 1.0
-    modtag: 5000000.0
-    war: 50000000.0
+    enabled: true #Default VAULT, if "false" does not charge player values.
+    desc: 0.0
+    create: 1000.0
+    invite: 0.0
+    deny: 0.0
+    join: 0.0
+    leave: 0.0
+    kick: 0.0
+    promote: 0.0
+    demote: 0.0
+    disband: 0.0
+    sethome: 0.0
+    home: 0.0
+    modtag: 0.0
+    rival: 0.0 #ADD OR REMOVE
+    ally: 0.0 ADD OR REMOVE
+    togglechat: 0.0
+    toggleff: 0.0
+    rtp: 0.0
+    base: 0.0
+    unclaimall: 0.0
+    unclaim: 0.0
+    war: 0.0
   limits:
     amount_by_player: 2
     max_by_clan: 10
