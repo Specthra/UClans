@@ -1,8 +1,9 @@
 Config:
-  tag: ' &c&l(!)'
+  tag: '&6&lU&a&lClans &8>>'
   date-format: 'dd/MM/yyyy HH:mm'
   debug_errors: false
   confirm: 'CONFIRM'
+  confirm_case_sensitive: true
   teleport_delay: 3
   logs:
     clan: true
@@ -33,6 +34,7 @@ Config:
 # %uclans_player_deaths%
 # %uclans_player_souls%
 # %uclans_player_kd%
+# %uclans_count_members%
 
 Events:
   liquid_flow:
@@ -63,7 +65,7 @@ Survival_mode: #terrains
   chunks_by_player: 1
   chunks_max_clan: 10
   chunk_price: 100000.0
-  enabled_worlds: 'lobby'
+  enabled_worlds: 'world'
   use_material_claim: true
   use_material_claim_all: false
   material_claim: 'TORCH'
@@ -73,6 +75,7 @@ Survival_mode: #terrains
     use_delay: 120
     rangemax: 2500
     rangemin: -2500
+    block_if_empty: 'STONE'
   Title:
     chunks:
       enabled: true
@@ -87,7 +90,7 @@ Survival_mode: #terrains
       message: '&eLand of the clan &b%clan_tag%'
   Chat:
     chunks:
-      enabled: false
+      enabled: true
       message: '&eLand of the clan &b%clan_tag%'
 
 Hologram:
