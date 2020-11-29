@@ -1,3 +1,7 @@
+Plugin:
+  check-for-updates: true
+  use-metrics: true
+
 Config:
   tag: '&6&lU&a&lClans &8>>'
   date-format: 'dd/MM/yyyy HH:mm'
@@ -49,12 +53,12 @@ Events:
     fireball: true
   place:
     enabled: true
-    bloqued_list:
+    blocked_list:
     - 'TNT'
     - 'POWERED_RAIL'
   mobs:
     enabled: true
-    bloked_events:
+    blocked_events:
     - 'NATURAL'
 
 Survival_mode: #terrains
@@ -164,7 +168,7 @@ Clan:
     home: 0.0
     modtag: 0.0
     rival: 0.0 #ADD OR REMOVE
-    ally: 0.0 ADD OR REMOVE
+    ally: 0.0 #ADD OR REMOVE
     togglechat: 0.0
     toggleff: 0.0
     rtp: 0.0
