@@ -1,6 +1,6 @@
 Gui:
   index_noclan:
-    inventory_name: 'Clans Menu &c(without Clan)'
+    inventory_name: 'Clan Menu &c(without Clan)'
     inventory_rows: 3
     sound-open: ''
     pagination: []
@@ -16,7 +16,7 @@ Gui:
         name: '&cYou dont have a Clan'
         lore:
         - ''
-        - ' &eClick here to create a Clan.'
+        - ' &eClick to create a Clan.'
         - ' '
         - ' &7After creating a clan you can claim'
         - '&7lands and create the base of your Clan.'
@@ -26,10 +26,10 @@ Gui:
         - ''
         left-action:
         - '[closegui]'
-        - '[player] /clan criar'
+        - '[player] /clan create'
         right-action:
         - '[closegui]'
-        - '[player] /clan criar'
+        - '[player] /clan create'
       commands:
         sound-click: ''
         itemstack: 'PAPER'
@@ -49,10 +49,10 @@ Gui:
         - ''
         left-action:
         - '[closegui]'
-        - '[player] /clan ajuda'
+        - '[player] /clan help'
         right-action:
         - '[closegui]'
-        - '[player] /clan ajuda'
+        - '[player] /clan help'
   index_actions:
     inventory_name: 'Clan Actions Menu &c(CAUTION)'
     inventory_rows: 4
@@ -67,7 +67,7 @@ Gui:
         data: 0
         amount: 1
         slot: 10
-        name: '&aChange Clan Tag'
+        name: '&aChange the clan Tag'
         lore:
         - ''
         - ' &eClick to change the Clan tag'
@@ -133,7 +133,7 @@ Gui:
         data: 0
         amount: 1
         slot: 13
-        name: '&aSet Clan Home'
+        name: '&aSet the Clan Home'
         lore:
         - ''
         - ' &eClick to set the Clan Home'
@@ -160,7 +160,7 @@ Gui:
         - ''
         - ' &eClick to delete the clan'
         - ' &cOnly the Leader can do this!'
-        - ' &cThis requires confirmation in CHATT!'
+        - ' &cThis requires confirmation in CHAT!'
         - ' '
         - ' &cCaution, this action cannot be undone'
         enchants:
@@ -181,10 +181,10 @@ Gui:
         data: 0
         amount: 1
         slot: 31
-        name: '&cVoltar'
+        name: '&cCome back'
         lore:
         - ''
-        - ' &eClique para voltar'
+        - ' &eClick to go back'
         enchants:
         - ''
         flags:
@@ -207,11 +207,10 @@ Gui:
         data: 3
         amount: 1
         slot: 10
-        name: '&aList all members'
+        name: '&aMember List'
         lore:
         - ''
-        - ' &eClick to list all'
-        - '&eclan members'
+        - ' &eClick to view the list of members'
         enchants:
         - ''
         flags:
@@ -228,7 +227,7 @@ Gui:
         data: 0
         amount: 1
         slot: 12
-        name: '&aInvite members'
+        name: '&aInvite players'
         lore:
         - ''
         - ' &eClick to invite new members'
@@ -263,7 +262,7 @@ Gui:
         right-action:
         - '[opengui] index_hasclan'
   index_land:
-    inventory_name: 'Clan Bases Menu'
+    inventory_name: 'Clan base menu'
     inventory_rows: 4
     sound-open: ''
     pagination: []
@@ -279,8 +278,7 @@ Gui:
         name: '&aList all bases.'
         lore:
         - ''
-        - ' &eClick to list all '
-        - '&eclan based bases.'
+        - ' &eClick to list all Clan bases'
         enchants:
         - ''
         flags:
@@ -297,11 +295,10 @@ Gui:
         data: 0
         amount: 1
         slot: 12
-        name: '&aClaim '
+        name: '&aClaim Chunk'
         lore:
         - ''
-        - ' &eClick to claim.'
-        - '&eterrain you are on.'
+        - ' &eClick to claim a chunk'
         enchants:
         - ''
         flags:
@@ -318,11 +315,10 @@ Gui:
         data: 0
         amount: 1
         slot: 13
-        name: '&aUnclaim '
+        name: '&aUnclaim Chunk '
         lore:
         - ''
-        - ' &eClick to unclaim'
-        - '&eterrain you are on.'
+        - ' &eClick to unclaim a chunk'
         enchants:
         - ''
         flags:
@@ -342,8 +338,7 @@ Gui:
         name: '&aTerrain information '
         lore:
         - ''
-        - ' &eClick to view information'
-        - '&eterrain you are on.'
+        - ' &eClick to view terrain information.'
         enchants:
         - ''
         flags:
@@ -373,7 +368,7 @@ Gui:
         right-action:
         - '[opengui] index_hasclan'
   index_hasclan: ##C;WHITE;RED;true
-    inventory_name: 'Menu de Clan'
+    inventory_name: 'Clan Menu'
     inventory_rows: 5
     sound-open: ''
     pagination: []
@@ -511,10 +506,10 @@ Gui:
         - ''
         left-action:
         - '[closegui]'
-        - '[player] /clan ajuda'
+        - '[player] /clan help'
         right-action:
         - '[closegui]'
-        - '[player] /clan ajuda'
+        - '[player] /clan help'
       actions:
         sound-click: ''
         itemstack: 'REDSTONE_COMPARATOR'
@@ -535,57 +530,3 @@ Gui:
         - '[opengui] index_actions'
         right-action:
         - '[opengui] index_actions'
-  rivalries:
-    inventory_name: 'Clan'
-    inventory_rows: 4
-    sound-open: ''
-    pagination:
-      use: true
-      show: 'rivalries'
-      max_per_page: 18
-      pagination_item:
-        sound-click: ''
-        itemstack: ''
-        skullowner: ''
-        texture: ''
-        data: 0
-        amount: 1
-        slot: 0
-        name: ''
-        lore:
-        - ''
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - ''
-        right-action:
-        - ''
-    items:
-      1:
-        sound-click: ''
-        itemstack: 'WOOL'
-        skullowner: ''
-        texture: ''
-        data: 14
-        amount: 1
-        slot: 40
-        name: '&cClose'
-        lore:
-        - ''
-        - ' &eClick to close.'
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - '[console]'
-        - '[player]'
-        - '[opengui]'
-        - '[closegui]'
-        - '[sound]'
-        - '[effect]'
-        - '[message]'
-        right-action:
-        - ''
