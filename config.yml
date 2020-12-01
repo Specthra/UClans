@@ -9,6 +9,7 @@ Config:
   confirm: 'CONFIRM'
   confirm_case_sensitive: true
   teleport_delay: 3
+  aliases_tabcomplete: true
   logs:
     clan: true
     stacktrace: true
@@ -39,6 +40,7 @@ Config:
 # %uclans_player_souls%
 # %uclans_player_kd%
 # %uclans_count_members%
+# %uclans_name%
 
 Events:
   liquid_flow:
@@ -176,6 +178,7 @@ Clan:
     unclaimall: 0.0
     unclaim: 0.0
     war: 0.0
+    name: 0.0
   limits:
     amount_by_player: 2
     max_by_clan: 10
@@ -216,6 +219,14 @@ Clan:
     max_chars: 64
     allowed_chars: "[0-9a-zA-Z \\-'_]*"
     default_color: '&8'
+    noname_formated: '&8WITHOUT DESC'
+  name:
+    allow_color: true
+    min_chars: 2
+    max_chars: 64
+    allowed_chars: "[0-9a-zA-Z \\-'_]*"
+    default_color: '&8'
+    noname_formated: '&8WITHOUT NAME'
 
 Messages:
   hologram:
@@ -291,6 +302,7 @@ Messages:
     error_moddesc: '%tag% &cError changing the Clan description.'
     clan_not_found: '%tag% &cClan with this TAG does not exist.'
     tag_equals: '%tag% &cUnchanged TAG, appears to be the same.'
+    name_equals: '%tag% &cUnchanged NAME, appears to be the same.'
     leave_is_leader: '%tag% &cYou are the Clan Leader, to leave use &b/clan disband&c and you will delete the Clan ...'
     error_leave: '%tag% &cError when leaving the Clan, try again.'
     player_offline: '%tag% &cThe player is offline or does not exist!'
@@ -303,7 +315,7 @@ Messages:
     invite_error_join: '%tag% &cError entering the clan, try again.'
     dont_in_your_clan: '%tag% &cThis player is not in your Clan.'
     error_kick: '%tag% &cError kicking the player.'
-    dont_kick_leader: '%tag% &You cannot expel the Clan Leader.'
+    dont_kick_leader: '%tag% &cYou cannot expel the Clan Leader.'
     already_mod: '%tag% &cThis player is already a moderator.'
     dont_mod: '%tag% &cThis player is not a moderator.'
     promote_error: '%tag% &cError promoting the player, try again ...'
@@ -325,6 +337,7 @@ Messages:
     ally_remove_error: '%tag% &cError removing ally.'
     max_members: '&cThis Clan already has the maximum number of players.'
     nodesc_tag: '&c<Without description!>'
+    noname_tag: '&c<Without name!>'
     nothing_on_list: '&cNothing here'
     none: '&cNo one'
     invite:
@@ -337,6 +350,7 @@ Messages:
     info_header: '&d&lClan Information &8%clan_tag%&d&l:'
     info_format:
     - ' &7Tag: &b%clan_tag%'
+    - ' &7Name: &b%clan_name%'
     - ' &7Desc: &b%clan_desc%'
     - ' &7Leader: &b%clan_leader%'
     - ' &7Creation date: &b%clan_creation_date%'
@@ -348,7 +362,7 @@ Messages:
     - ' &7Lands: &b%clan_chunks%'
     - ''
     profile_format:
-    - ' &7Nname: &b%player_name%'
+    - ' &7Name: &b%player_name%'
     - ' &7Clan: &b%clan_tag%'
     - ' &7Clan leader: &b%clan_leader%'
     - ' &7Kdr: &b%player_kills%&8/&b%player_deaths% &8(%player_kdr%)'
