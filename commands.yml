@@ -43,7 +43,7 @@ Commands:
         show:
             on_help: ' &8Type &f&lCONFIRM &r&8in the chat to confirm or &l&fCLICK HERE &r&8to cancel!'
             on_help_json:
-              hover_text: '&aClan disbandn.'
+              hover_text: '&aClan disband.'
               click_type: 'RUN_COMMAND' # SUGGEST_COMMAND, RUN_COMMAND, OPEN_URL
               click_action: '/clan cancel'
             on_success: '%tag% &aYou are seeing the help!'
@@ -442,6 +442,25 @@ Commands:
               click_action: '/clan ff'
             on_success: '%tag% &eFriendly Fire of Clan as changed to &b%clan_ff%'
             on_error: '%tag% &cUse &b/clan ff'
+        sound:
+            on_help: ''
+            on_success: ''
+            on_error: ''
+            extra:
+              volume: 10
+              pitch: 1
+      name:
+        permission: 'uclans.player.name'
+        no_permission_message: '%tag% &cYou dont have permission for this.'
+        alias: 'nome'
+        show:
+            on_help: ' &b/clan name <name> &7-&e Change name of Clan.'
+            on_help_json:
+              hover_text: '&aClick to change clan name.'
+              click_type: 'SUGGEST_COMMAND'
+              click_action: '/clan name <name>'
+            on_success: '%tag% &eThe clan name has been changed to &b%clan_name%'
+            on_error: '%tag% &cThere was an error changing the clan name'
         sound:
             on_help: ''
             on_success: ''
