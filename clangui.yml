@@ -388,6 +388,7 @@ Gui:
         - ' &eClan Information'
         - ' &7'
         - ' &7Tag: &b%clan_tag%'
+        - ' &7Name: &b%clan_name%'
         - ' &7Desc: &b%clan_desc%'
         - ' &7Leader: &b%clan_leader%'
         - ' &7Creation date: &b%clan_creation%'
