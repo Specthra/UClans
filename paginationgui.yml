@@ -13,7 +13,7 @@ Gui:
         data: 0
         amount: 1
         slot: 0
-        name: '&aGround n° %number%'
+        name: '&aGround nÂ° %number%'
         lore:
         - ''
         - ' &eClick to teleport to this land.'
@@ -107,7 +107,7 @@ Gui:
         - ''
         - ' &7Leader: &b%leader_yes_no%'
         - ' &7Moderators: &b%mod_yes_no%'
-        - ' &7Nname: &b%player_name%'
+        - ' &7Nickname: &b%player_name%'
         - ' &7Kdr: &b%player_kills%&8/&b%player_deaths% &8(%player_kdr%)'
         - ' &7Entry into: &b%player_join_date%'
         - ' &7Last Seen: &b%player_seen_date%'
@@ -132,7 +132,7 @@ Gui:
         name: '&aPrevious page'
         lore:
         - ''
-        - ' &eClick to go back.'
+        - ' &eClick to Come back.'
         enchants:
         - ''
         flags:
@@ -172,7 +172,7 @@ Gui:
         name: '&cCome back'
         lore:
         - ''
-        - ' &eClick to go back.'
+        - ' &eClick to Come back.'
         enchants:
         - ''
         flags:
