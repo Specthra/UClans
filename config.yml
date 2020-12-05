@@ -75,6 +75,7 @@ Survival_mode: #terrains
   use_material_claim: true
   use_material_claim_all: false
   material_claim: 'TORCH'
+  claim_distance_other_terrain: 1 # -1 to disable
   bypass_permission_edit: 'player.bypass.perm.edit' #Edit all terrains, protected or not. Permission for STAFFS.
   rtp:
     enabled: true
@@ -122,12 +123,33 @@ Cosmetic:
     flags:
     - 'HIDE_ENCHANTS'
 
+Wand:
+  item:
+    material: 'STICK'
+    data: 0
+    amount: 1
+    name: '&4UltimateClans &6&lWAND'
+    lore:
+    - ' '
+    - ' &eThis item should be used to mark'
+    - '&eregion points for region.'
+    - ' '
+    - ' &bLEFT-CLICK &7to mark point &b#1'
+    - ' &bRIGHT-CLICK &7to mark point &b#2'
+    sound: ''
+    flags:
+    - HIDE_ENCHANTS
+    enchants:
+    - 'PROTECTION_ENVIRONMENTAL;2'
+
 Gui:
   help_gui: true
   hasclan: 'index_hasclan'
   noclan: 'index_noclan'
 
 Clan:
+  disabled_claim_regions: #/uclan addregion <name>
+  - 'spawn'
   disabled_command_worlds:
   - 'disabled_worlds'
   disabled_command_regions:
@@ -137,7 +159,7 @@ Clan:
   forced_ff_regions:
   - 'worlds'
   invite:
-    max_time_seconds: 60
+    max_time_seconds: 60 #IN SECONDS
     allowed_chars: "[0-9a-zA-Z]*"
   chat:
     format: ' &d%uclans_level_identifier% &5%player%&d: &d%chat_message%'
@@ -184,17 +206,17 @@ Clan:
     max_by_clan: 10
   task:
     update_list:
-      start: 5
-      next: 300
+      start: 5 #IN SECONDS
+      next: 300 #IN SECONDS
     update_invite:
-      start: 60
-      next: 60
+      start: 300 #IN SECONDS
+      next: 600 #IN SECONDS
     save_playerdata:
-      start: 300
-      next: 600
+      start: 300 #IN SECONDS
+      next: 600 #IN SECONDS
     save_clandata:
-      start: 300
-      next: 600
+      start: 300 #IN SECONDS
+      next: 600 #IN SECONDS
   level:
     leader:
       identifier: '&6**&r'
@@ -219,7 +241,7 @@ Clan:
     max_chars: 64
     allowed_chars: "[0-9a-zA-Z \\-'_]*"
     default_color: '&8'
-    noname_formated: '&8WITHOUT DESC'
+    nodesc_formated: '&8WITHOUT DESC'
   name:
     allow_color: true
     min_chars: 2
@@ -241,6 +263,13 @@ Messages:
     wait: ' &ewait....'
   comum:
     empty: ' '
+    check_wand: '%tag% &cYou need to mark the points before creating the region.'
+    region_dont_exists: '%tag% &cThere is no region with this name.'
+    region_exists: '%tag% &cThere is already a region with this name.'
+    invalid_characters: '%tag% &cThe name contains invalid characters.'
+    marked_point: '%tag% &ePoint &b#%point_number% &ewas scored in &b%location%'
+    disable_region: '%tag% &cThis location cannot be claimed.'
+    very_close_another: '%tag% &cThe place where you are trying to claim is very close to another protected area.'
     special_nopaste: '%tag% &cThere was an error with this, please try again!'
     error_special_item: '%tag% &cAn error occurred with this, please notify an administrator!'
     error_special_item_command: '%tag% &cUse &4/uclan item <player> <item> <amount>'
@@ -276,6 +305,9 @@ Messages:
     dont_money: '%tag% &cYou need to &a$%amount% &cfor this.'
     debited_money: '%tag% &eIt was debited &a%amount% &eyour account.'
     help_header: '&d&lHelp with Clan:'
+    help_listregion_header: '&d&lList of regions:'
+    help_listregion_format: ' &b%region_name% &7- %region_creator% &7- &b%region_firstpoint%&7/&b%region_secondpoint%'
+    help_listregion_empty: '&8 - There are no saved regions'
     help_land_header: '&d&lLand help:'
     help_clan_header: '&d&lClan Help:'
     help_uclan_header: '&4&lAdmin Clan Help:'
@@ -358,7 +390,7 @@ Messages:
     - ' &7Kdr: &b%clan_kills%&8/&b%clan_deaths% &8(%clan_kdr%)'
     - ' &7Members: &b%clan_members%'
     - ' &7Allies: &b%clan_ally%'
-    - ' &7RRivais: &b%clan_rival%'
+    - ' &7Rivais: &b%clan_rival%'
     - ' &7Lands: &b%clan_chunks%'
     - ''
     profile_format:
@@ -379,7 +411,7 @@ Messages:
     landinfo_format:
     - ' &7Lands: &b%chunk%'
     - ' &7Clan owner: &b%chunk_owner%'
-    landlist_header: '&d&lLLista de seus terrenos:'
+    landlist_header: '&d&lList of your land:'
     landlist_format:
     - ' &7Lands: &b%number%'
     - ' &7Chunks: &b%chunk%'
@@ -431,7 +463,7 @@ Messages:
         click_type: 'RUN_COMMAND'
         click_action: '/clan list %prev_page%'
     clan_deleted:
-        raw_text: ' &a%clan_rank%° &7- &c&mClan deletado!'
+        raw_text: ' &a%clan_rank%° &7- &c&mDeleted clan!'
         hover_text: '&cSoon it will leave this list!'
         click_type: ''
         click_action: ''
