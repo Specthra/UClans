@@ -10,6 +10,7 @@ Config:
   confirm_case_sensitive: true
   teleport_delay: 3
   aliases_tabcomplete: true
+  commands_tabcomplete: true
   logs:
     clan: true
     stacktrace: true
