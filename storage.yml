@@ -2,10 +2,10 @@ Storage:
   type: 'yaml' #mysql/yaml/sqlite
   mysql:
     host: 'localhost'
-    user: 'root'
-    pass: 'Trlp7s9O'
+    user: 'YOU-USER'
+    pass: 'YOU-PASSWORD'
     port: 3306
-    base: 'skyblock'
+    base: 'YOU-BASE-PRE-CREATED'
   databases:
     clan_table: 'uclans-clans'
     player_table: 'uclans-players'
@@ -20,6 +20,7 @@ Storage:
     uclans-clans:
       id: 'u_id'
       tag: 'u_tag'
+      name: 'u_name'
       tag_raw: 'u_tag_raw'
       desc: 'u_desc'
       leader: 'u_leader'
@@ -36,6 +37,7 @@ Storage:
       souls: 'u_souls'
       kdr: 'u_kdr'
       ff: 'u_ff'
+      chunks: 'u_chunks'
     uclans-players:
       id: 'u_id'
       name: 'u_name'
