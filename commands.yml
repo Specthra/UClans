@@ -238,7 +238,7 @@ Commands:
               hover_text: '&aClick to disband a clan.'
               click_type: 'SUGGEST_COMMAND'
               click_action: '/clan disband'
-            on_success: '%tag% &aYou have deleted you clan clan!'
+            on_success: '%tag% &aYou have deleted you clan!'
             on_error: '%tag% &cUse &b/clan disband <tag> <description>'
         sound:
             on_help: ''
@@ -323,10 +323,10 @@ Commands:
         show:
             on_help: ' &b/clan kick <player> &7-&e Remove player from Clan.'
             on_help_json:
-              hover_text: '&aClick to remove one player to Clan.'
+              hover_text: '&aClick to remove one player from the Clan.'
               click_type: 'SUGGEST_COMMAND'
               click_action: '/clan kick <player>'
-            on_success: '%tag% &ePlayer as removed from clan.'
+            on_success: '%tag% &ePlayer has been removed from clan.'
             on_error: '%tag% &cUse &b/clan kick <player>'
         sound:
             on_help: ''
@@ -364,7 +364,7 @@ Commands:
               hover_text: '&aClick to demote player.'
               click_type: 'SUGGEST_COMMAND'
               click_action: '/clan demote <player>'
-            on_success: '%tag% &ePlayer as demoted in clan.'
+            on_success: '%tag% &ePlayer has been demoted in clan.'
             on_error: '%tag% &cUse &b/clan demote <player>'
         sound:
             on_help: ''
@@ -626,7 +626,7 @@ Commands:
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'aliado'
         show:
-            on_help: ' &b/clan ally <add/remove> <tag> &7-&e Add Clan with ally.'
+            on_help: ' &b/clan ally <add/remove> <tag> &7-&e Add Clan as ally.'
             on_help_json:
               hover_text: '&aClick to add/remove a Clan ally.'
               click_type: 'SUGGEST_COMMAND'
@@ -818,7 +818,7 @@ Commands:
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'spawnholo'
         show:
-            on_help: ' &a/uclan spawnholo &7-&c Spawn holo stats.'
+            on_help: ' &a/uclan spawnholo &7-&e Spawn holo stats.'
             on_help_json:
               hover_text: '&aClick to spawn HoloStats.'
               click_type: 'SUGGEST_COMMAND'
@@ -838,7 +838,7 @@ Commands:
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'spawnholo'
         show:
-            on_help: ' &a/uclan despawnholo &7-&c Spawn holo stats.'
+            on_help: ' &a/uclan despawnholo &7-&e Spawn holo stats.'
             on_help_json:
               hover_text: '&aClick to despawn HoloStats.'
               click_type: 'SUGGEST_COMMAND'
@@ -858,7 +858,7 @@ Commands:
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'listholos'
         show:
-            on_help: ' &a/uclan listholos &7-&c List all holos.'
+            on_help: ' &a/uclan listholos &7-&e List all holos.'
             on_help_json:
               hover_text: '&aClick to list all HoloStats.'
               click_type: 'SUGGEST_COMMAND'
@@ -878,12 +878,12 @@ Commands:
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'tpholo'
         show:
-            on_help: ' &a/uclan tpholo <id> &7-&c Teleport to hologram.'
+            on_help: ' &a/uclan tpholo <id> &7-&e Teleport to hologram.'
             on_help_json:
               hover_text: '&aClick to teleport.'
               click_type: 'SUGGEST_COMMAND'
               click_action: '/uclan tpholo <id>'
-            on_success: '%tag% &eYou has teleported to hologram'
+            on_success: '%tag% &eYou have been teleported to hologram.'
             on_error: '%tag% &cUse &a/uclan tpholo <id>'
             raw_base_color: 'GREEN'
         sound:
@@ -898,7 +898,7 @@ Commands:
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'reloadholos'
         show:
-            on_help: ' &a/uclan reloadholos &7-&c Reload hologram.'
+            on_help: ' &a/uclan reloadholos &7-&e Reload hologram.'
             on_help_json:
               hover_text: '&aClick to reload holograms.'
               click_type: 'SUGGEST_COMMAND'
@@ -956,12 +956,12 @@ Commands:
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'deletar'
         show:
-            on_help: ' &4/uclan globalff &7-&c Change a global ff.'
+            on_help: ' &4/uclan globalff &7-&e Change a global ff.'
             on_help_json:
               hover_text: '&aClick change global FF'
               click_type: 'SUGGEST_COMMAND'
               click_action: '/uclan globalff'
-            on_success: '%tag% &aYou has changes a global ff to &b%globalff%'
+            on_success: '%tag% &aYou have changed a global ff to &b%globalff%'
             on_error: '%tag% &cUse &4/uclan globalff'
             raw_base_color: 'DARK_RED'
         sound:
@@ -976,7 +976,7 @@ Commands:
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'deletar'
         show:
-            on_help: ' &4/uclan delete <tag> &7-&c Delete a new Clan.'
+            on_help: ' &4/uclan delete <tag> &7-&e Delete a new Clan.'
             on_help_json:
               hover_text: '&aClick to delete one Clan.'
               click_type: 'SUGGEST_COMMAND'
@@ -996,7 +996,7 @@ Commands:
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'verificar'
         show:
-            on_help: ' &4/uclan verify <tag> &7-&c Verify a Clan.'
+            on_help: ' &4/uclan verify <tag> &7-&e Verify a Clan.'
             on_help_json:
               hover_text: '&aClick to verify one Clan.'
               click_type: 'SUGGEST_COMMAND'
@@ -1016,7 +1016,7 @@ Commands:
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'random'
         show:
-            on_help: ' &6/clan rtp <player> &7-&6 Teleports a player without delay.'
+            on_help: ' &4/clan rtp <player> &7-&e Teleports a player without delay.'
             on_help_json:
               hover_text: '&aClick to teleport &c(NO DELAY).'
               click_type: 'SUGGEST_COMMAND'
@@ -1035,7 +1035,7 @@ Commands:
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: 'recarregar'
         show:
-            on_help: ' &4/uclan reload &7-&c Reload the plugin.'
+            on_help: ' &4/uclan reload &7-&e Reload the plugin.'
             on_help_json:
               hover_text: '&aClick to reload plugin configurations.'
               click_type: 'SUGGEST_COMMAND'
@@ -1043,6 +1043,139 @@ Commands:
             on_success: '%tag% &ePlugin reloaded.'
             on_error: '%tag% &cUse &4/uclan reload'
             raw_base_color: 'DARK_RED'
+        sound:
+            on_help: ''
+            on_success: ''
+            on_error: ''
+            extra:
+              volume: 10
+              pitch: 1
+      separer3:
+        permission: ''
+        no_permission_message: '%tag% &cYou dont have permission for this.'
+        alias: ''
+        show:
+            on_help: ' &8Regions: &6[?]'
+            on_help_json:
+              hover_text: '&aRegions commands.'
+              click_type: ''
+              click_action: ''
+      wand:
+        permission: 'uclans.admin.wand'
+        no_permission_message: '%tag% &cYou dont have permission for this.'
+        alias: 'wand'
+        show:
+            on_help: ' &5/uclan wand &7-&e Receives a wand.'
+            on_help_json:
+              hover_text: '&aClick to receive a wand.'
+              click_type: 'SUGGEST_COMMAND'
+              click_action: '/uclan wand'
+            on_success: '%tag% &aYou received a wand.'
+            on_error: '%tag% &cAn error occurred while receiving the wand'
+            raw_base_color: 'DARK_RED'
+        sound:
+            on_help: ''
+            on_success: ''
+            on_error: ''
+            extra:
+              volume: 10
+              pitch: 1
+      clearwand:
+        permission: 'uclans.admin.clearwand'
+        no_permission_message: '%tag% &cYou dont have permission for this.'
+        alias: 'clearwand'
+        show:
+            on_help: ' &5/uclan clearwand &7-&e Clean the wand points'
+            on_help_json:
+              hover_text: '&aClick to clean the wand points.'
+              click_type: 'SUGGEST_COMMAND' # SUGGEST_COMMAND, RUN_COMMAND, OPEN_URL
+              click_action: '/uclan clearwand'
+            on_success: '%tag% &aYour wand was cleaned!'
+            on_error: '%tag%&cError cleaning wand.'
+        sound:
+            on_help: ''
+            on_success: ''
+            on_error: ''
+            extra:
+              volume: 10
+              pitch: 1
+      addregion:
+        permission: 'uclans.admin.addregion'
+        no_permission_message: '%tag% &cYou dont have permission for this.'
+        alias: 'addregion'
+        show:
+            raw_base_color: 'YELLOW'
+            on_help: ' &5/uclan addregion <name> &7-&e Adds a region.'
+            on_help_json:
+              hover_text: '&aClick to sho status.'
+              click_type: 'SUGGEST_COMMAND' # SUGGEST_COMMAND, RUN_COMMAND, OPEN_URL
+              click_action: '/uclan addregion <name>'
+            on_success: '%tag% &eNew region successfully created.'
+            on_error: '%tag% &cThere was an error creating the region, please try again.'
+            on_usage: '%tag% &cError, use &b/uclan addregion <name>'
+        sound:
+            on_help: ''
+            on_success: ''
+            on_error: ''
+            extra:
+              volume: 10
+              pitch: 1
+      removeregion:
+        permission: 'uclans.admin.removeregion'
+        no_permission_message: '%tag% &cYou dont have permission for this.'
+        alias: 'removeregion'
+        show:
+            raw_base_color: 'YELLOW'
+            on_help: ' &5/uclan removeregion <name> &7-&e Removes a region.'
+            on_help_json:
+              hover_text: '&aClick to sho status.'
+              click_type: 'SUGGEST_COMMAND' # SUGGEST_COMMAND, RUN_COMMAND, OPEN_URL
+              click_action: '/uclan removeregion <name>'
+            on_success: '%tag% &eThe region has been successfully deleted.'
+            on_error: '%tag% &cThere was an error deleting the region.'
+            on_usage: '%tag% &cError, use &b/uclan removeregion <name>'
+        sound:
+            on_help: ''
+            on_success: ''
+            on_error: ''
+            extra:
+              volume: 10
+              pitch: 1
+      listregions:
+        permission: 'UClans.admin.listregions'
+        no_permission_message: '%tag% &cYou dont have permission for this.'
+        alias: 'listregions'
+        show:
+            raw_base_color: 'YELLOW'
+            on_help: ' &5/uclan listregions &7-&e Lists saved regions.'
+            on_help_json:
+              hover_text: '&aClick to show saved arenas.'
+              click_type: 'SUGGEST_COMMAND' # SUGGEST_COMMAND, RUN_COMMAND, OPEN_URL
+              click_action: '/uclan listregions'
+            on_success: '%tag% &aYou are seeing the help!'
+            on_error: '%tag%&cError to list.'
+            on_usage: '%tag% &cError, use &b/uclan listregions'
+        sound:
+            on_help: ''
+            on_success: ''
+            on_error: ''
+            extra:
+              volume: 10
+              pitch: 1
+      tpregion:
+        permission: 'UClans.admin.listregions'
+        no_permission_message: '%tag% &cYou dont have permission for this.'
+        alias: 'tpregion'
+        show:
+            raw_base_color: 'YELLOW'
+            on_help: ' &5/uclan tpregion <name> &7-&e Teleports to a region.'
+            on_help_json:
+              hover_text: '&aClick to teleport to a region.'
+              click_type: 'SUGGEST_COMMAND' # SUGGEST_COMMAND, RUN_COMMAND, OPEN_URL
+              click_action: '/uclan tpregion <name>'
+            on_success: '%tag% &aYou were teleported to the region!'
+            on_error: '%tag% &cAn error occurred while teleporting, check if the world exists or the location is not invalid'
+            on_usage: '%tag% &cError, use &b/uclan tpregion <name>'
         sound:
             on_help: ''
             on_success: ''
