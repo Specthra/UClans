@@ -42,6 +42,8 @@ Config:
 # %uclans_player_kd%
 # %uclans_count_members%
 # %uclans_name%
+# %uclans_chunks%
+# %uclans_chunks_size%
 
 Events:
   liquid_flow:
@@ -264,6 +266,9 @@ Messages:
     wait: ' &ewait....'
   comum:
     empty: ' '
+    player_kicked_out_toclan: '%tag% &4%player% &ehas been kicked out of the clan by &a%clan_leader%'
+    player_kicked_out: '%tag% &eYou have been kicked out of the clan &b%clan% &cby &a%clan_leader%'
+    dont_mod_and_leader: '%tag% &cYou are not the leader or Mod of the Clan.'
     check_wand: '%tag% &cYou need to mark the points before creating the region.'
     region_dont_exists: '%tag% &cThere is no region with this name.'
     region_exists: '%tag% &cThere is already a region with this name.'
