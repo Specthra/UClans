@@ -163,7 +163,7 @@ Clan:
   - 'worlds'
   invite:
     max_time_seconds: 60 #IN SECONDS
-    allowed_chars: "[0-9a-zA-Z]*"
+    allowed_chars: "[0-9a-zA-Z\\-'_]*"
   chat:
     format: ' &d%uclans_level_identifier% &5%player%&d: &d%chat_message%'
   verify:
