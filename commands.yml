@@ -41,7 +41,7 @@ Commands:
         no_permission_message: '%tag% &cYou dont have permission for this.'
         alias: ''
         show:
-            on_help: ' &8Type &f&lCONFIRM &r&8in the chat to confirm or &l&fCLICK HERE &r&8to cancel!'
+            on_help: ' &8Type &f&l%confirm_action% &r&8in the chat to confirm or &l&fCLICK HERE &r&8to cancel!'
             on_help_json:
               hover_text: '&aClan disband.'
               click_type: 'RUN_COMMAND' # SUGGEST_COMMAND, RUN_COMMAND, OPEN_URL
