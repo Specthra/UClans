@@ -6,7 +6,7 @@ Config:
   tag: '&6&lU&a&lClans &8>>'
   date-format: 'dd/MM/yyyy HH:mm'
   debug_errors: false
-  confirm: 'CONFIRM'
+  confirm: 'CONFIRM' # use '' to disable confirmation
   confirm_case_sensitive: true
   teleport_delay: 3
   aliases_tabcomplete: true
@@ -42,66 +42,6 @@ Config:
 # %uclans_player_kd%
 # %uclans_count_members%
 # %uclans_name%
-# %uclans_chunks%
-# %uclans_chunks_size%
-
-Events:
-  liquid_flow:
-    disable: true
-  piston:
-    disable: true
-  explosion:
-    creeper: true
-    tnt: true
-    others: true
-    ender_crystal: true
-    fireball: true
-  place:
-    enabled: true
-    blocked_list:
-    - 'TNT'
-    - 'POWERED_RAIL'
-  mobs:
-    enabled: true
-    blocked_events:
-    - 'NATURAL'
-
-Survival_mode: #terrains
-  enabled: true
-  clan_bases: true
-  only_edit_claimed: true
-  chunks_start_clan: 4
-  chunks_by_player: 1
-  chunks_max_clan: 10
-  chunk_price: 100000.0
-  enabled_worlds: 'world'
-  use_material_claim: true
-  use_material_claim_all: false
-  material_claim: 'TORCH'
-  claim_distance_other_terrain: 1 # -1 to disable
-  bypass_permission_edit: 'player.bypass.perm.edit' #Edit all terrains, protected or not. Permission for STAFFS.
-  rtp:
-    enabled: true
-    use_delay: 120
-    rangemax: 2500
-    rangemin: -2500
-    block_if_empty: 'STONE'
-  Title:
-    chunks:
-      enabled: true
-      message: '&cLand of the clan %clan_tag%'
-      sub: 'Desc: %clan_desc%'
-      fadein: 1
-      stay: 3
-      fadeout: 1
-  Actionbar:
-    chunks:
-      enabled: true
-      message: '&eLand of the clan &b%clan_tag%'
-  Chat:
-    chunks:
-      enabled: true
-      message: '&eLand of the clan &b%clan_tag%'
 
 Hologram:
   enabled: true
@@ -165,7 +105,7 @@ Clan:
     max_time_seconds: 60 #IN SECONDS
     allowed_chars: "[0-9a-zA-Z\\-'_]*"
   chat:
-    format: ' &d%uclans_level_identifier% &5%player%&d: &d%chat_message%'
+    format: ' &d%uclans_level_identifier% &5%player%&d: &d%chat_message%' #Any placeholder can be used with PAPI.
   verify:
     always_verified: true
   kills:
@@ -198,11 +138,6 @@ Clan:
     ally: 0.0 #ADD OR REMOVE
     togglechat: 0.0
     toggleff: 0.0
-    rtp: 0.0
-    base: 0.0
-    unclaimall: 0.0
-    unclaim: 0.0
-    war: 0.0
     name: 0.0
   limits:
     amount_by_player: 2
@@ -277,6 +212,7 @@ Messages:
     disable_region: '%tag% &cThis location cannot be claimed.'
     very_close_another: '%tag% &cThe place where you are trying to claim is very close to another protected area.'
     special_nopaste: '%tag% &cThere was an error with this, please try again!'
+    error_addchunk: '%tag% &cAn error occurred with this, please notify an administrator!'
     error_special_item: '%tag% &cAn error occurred with this, please notify an administrator!'
     error_special_item_command: '%tag% &cUse &4/uclan item <player> <item> <amount>'
     special_incooldown: '%tag% &eWait %sec% sec to use this again!'
@@ -397,7 +333,6 @@ Messages:
     - ' &7Members: &b%clan_members%'
     - ' &7Allies: &b%clan_ally%'
     - ' &7Rivais: &b%clan_rival%'
-    - ' &7Lands: &b%clan_chunks%'
     - ''
     profile_format:
     - ' &7Name: &b%player_name%'
@@ -413,14 +348,6 @@ Messages:
     - ' &7Verified: &b%clan_verified%'
     - ' &7Clan Kdr: &b%clan_kills%&8/&b%clan_deaths% &8(%clan_kdr%)'
     - ' &7Members:'
-    landinfo_header: '&d&lLand Information:'
-    landinfo_format:
-    - ' &7Lands: &b%chunk%'
-    - ' &7Clan owner: &b%chunk_owner%'
-    landlist_header: '&d&lList of your land:'
-    landlist_format:
-    - ' &7Lands: &b%number%'
-    - ' &7Chunks: &b%chunk%'
     stats_member_format: '  &7&a%list_player% &7- &b%list_player_role% &7- &b%list_player_kills%&8/&b%list_player_deaths% &8(%list_player_kdr%) &7[%list_player_seen_date%]'
     new_ally: '%tag% &c&l! &eA new alliance was formed with the clan &a%clan_tag%'
     removed_ally: '%tag% &c&l! &eThe alliance with the clan &a%clan_tag% &ehas removed.'
