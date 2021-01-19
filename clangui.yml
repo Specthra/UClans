@@ -8,8 +8,8 @@ Gui:
       1:
         sound-click: '' #example BLOCK_ANVIL_LAND:1
         itemstack: 'SKULL_ITEM'
-        skullowner: '%player%'
-        texture: ''
+        skullowner: ''
+        texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNlMWNiYjFmNDNmYTUxMzA4Yzg0Y2E1ZjNhNTUwMTc4ODE1ODFkZGI5NWZkM2M2OGE5ZGRhMjA5ZDA0NTVhYiJ9fX0='
         data: 3
         amount: 1
         slot: 10
@@ -54,7 +54,7 @@ Gui:
         - '[closegui]'
         - '[player] /clan help'
   index_actions:
-    inventory_name: 'Clan Actions Menu &c(CAUTION)'
+    inventory_name: 'Clan Actions Menu'
     inventory_rows: 4
     sound-open: ''
     pagination: []
@@ -160,9 +160,10 @@ Gui:
         - ''
         - ' &eClick to delete the clan'
         - ' &cOnly the Leader can do this!'
+        - ' &cThis will remove the protection from your land'
         - ' &cThis requires confirmation in CHAT!'
         - ' '
-        - ' &cCaution, this action cannot be undone'
+        - ' &cCaution, this action cannot be undone!'
         enchants:
         - ''
         flags:
@@ -261,112 +262,6 @@ Gui:
         - '[opengui] index_hasclan'
         right-action:
         - '[opengui] index_hasclan'
-  index_land:
-    inventory_name: 'Clan base menu'
-    inventory_rows: 4
-    sound-open: ''
-    pagination: []
-    items:
-      list:
-        sound-click: ''
-        itemstack: 'CHEST'
-        skullowner: ''
-        texture: ''
-        data: 0
-        amount: 1
-        slot: 10
-        name: '&aList all bases.'
-        lore:
-        - ''
-        - ' &eClick to list all Clan bases'
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - '[opengui_land] 1'
-        right-action:
-        - '[opengui_land] 1'
-      claim:
-        sound-click: ''
-        itemstack: 'MAP'
-        skullowner: ''
-        texture: ''
-        data: 0
-        amount: 1
-        slot: 12
-        name: '&aClaim Chunk'
-        lore:
-        - ''
-        - ' &eClick to claim a chunk'
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - '[player] clan claim'
-        right-action:
-        - '[player] clan claim'
-      unclaim:
-        sound-click: ''
-        itemstack: 'MAP'
-        skullowner: ''
-        texture: ''
-        data: 0
-        amount: 1
-        slot: 13
-        name: '&aUnclaim Chunk '
-        lore:
-        - ''
-        - ' &eClick to unclaim a chunk'
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - '[player] clan unclaim'
-        right-action:
-        - '[player] clan unclaim'
-      info:
-        sound-click: ''
-        itemstack: 'MAP'
-        skullowner: ''
-        texture: ''
-        data: 0
-        amount: 1
-        slot: 14
-        name: '&aTerrain information '
-        lore:
-        - ''
-        - ' &eClick to view terrain information.'
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - '[player] clan landinfo'
-        right-action:
-        - '[player] clan landinfo'
-      back:
-        sound-click: ''
-        itemstack: 'ARROW'
-        skullowner: ''
-        texture: ''
-        data: 0
-        amount: 1
-        slot: 31
-        name: '&cCome back'
-        lore:
-        - ''
-        - ' &eClick to go back'
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - '[opengui] index_hasclan'
-        right-action:
-        - '[opengui] index_hasclan'
   index_hasclan: ##C;WHITE;RED;true
     inventory_name: 'Clan Menu'
     inventory_rows: 5
@@ -375,11 +270,11 @@ Gui:
     items:
       1:
         sound-click: ''
-        itemstack: 'DIAMOND_SWORD'
+        itemstack: 'SKULL_ITEM'
         skullowner: ''
         banner: ''
-        texture: ''
-        data: 0
+        texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDAxYWZlOTczYzU0ODJmZGM3MWU2YWExMDY5ODgzM2M3OWM0MzdmMjEzMDhlYTlhMWEwOTU3NDZlYzI3NGEwZiJ9fX0='
+        data: 3
         amount: 1
         slot: 10
         name: '&aClan %clan_tag%'
@@ -397,7 +292,6 @@ Gui:
         - ' &7Members: &b%clan_members%'
         - ' &7Allies: &b%clan_ally%'
         - ' &7Rivals: &b%clan_rival%'
-        - ' &7Terrains: &b%clan_chunks%'
         enchants:
         - ''
         flags:
@@ -408,10 +302,10 @@ Gui:
         sound-click: ''
         itemstack: 'SKULL_ITEM'
         skullowner: ''
-        texture: ''
+        texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQxZmFjNmIyYTgyODg1ODk1YzVhN2I2OTc2OWE4NWFmOTBhZmRkOGMzZDNhYjUxOTRjYzU3ODU5MTBiZDM0NSJ9fX0='
         data: 3
         amount: 1
-        slot: 14
+        slot: 12
         name: '&aClan Members'
         lore:
         - ''
@@ -424,29 +318,9 @@ Gui:
         - '[opengui] index_members'
         right-action:
         - '[opengui] index_members'
-      land:
-        sound-click: ''
-        itemstack: 'GRASS'
-        skullowner: ''
-        texture: ''
-        data: 3
-        amount: 1
-        slot: 15
-        name: '&aClan Lands'
-        lore:
-        - ''
-        - ' &eClick to open the terrain menu.'
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - '[opengui] index_land'
-        right-action:
-        - '[opengui] index_land'
       home:
         sound-click: ''
-        itemstack: 'ANVIL'
+        itemstack: 'BOW'
         skullowner: ''
         texture: ''
         data: 0
@@ -466,28 +340,6 @@ Gui:
         right-action:
         - '[closegui]'
         - '[player] /clan home'
-      rtp:
-        sound-click: ''
-        itemstack: 'BOW'
-        skullowner: ''
-        texture: ''
-        data: 0
-        amount: 1
-        slot: 29
-        name: '&aTeleport to a random location'
-        lore:
-        - ''
-        - ' &eClick to go to a random location.'
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - '[closegui]'
-        - '[player] /clan rtp'
-        right-action:
-        - '[closegui]'
-        - '[player] /clan rtp'
       commands:
         sound-click: ''
         itemstack: 'PAPER'
@@ -519,7 +371,7 @@ Gui:
         data: 0
         amount: 1
         slot: 34
-        name: '&aActions &c&lCAUTION !!!'
+        name: '&aActions'
         lore:
         - ''
         - ' &eClick to open.'
