@@ -659,6 +659,25 @@ Commands:
             extra:
               volume: 10
               pitch: 1
+      members:
+        permission: 'uclans.player.members'
+        no_permission_message: '%tag% &cYou dont have permission for this.'
+        alias: 'membros'
+        show:
+            on_help: ' &b/clan members &7-&e Shows the list of members.'
+            on_help_json:
+              hover_text: '&aClick to view.'
+              click_type: 'SUGGEST_COMMAND'
+              click_action: '/clan members'
+            on_success: '%tag% &aYou are viewing the list of members'
+            on_error: '%tag% &cUse &6/clan members'
+        sound:
+            on_help: ''
+            on_success: ''
+            on_error: ''
+            extra:
+              volume: 10
+              pitch: 1
       separer1:
         permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
@@ -669,132 +688,18 @@ Commands:
               hover_text: '&aLand commands.'
               click_type: ''
               click_action: ''
-      rtp:
-        permission: 'uclans.player.rtp'
+      land:
+        permission: ''
         no_permission_message: '%tag% &cYou dont have permission for this.'
-        alias: 'random'
+        alias: 'land'
         show:
-            on_help: ' &6/clan rtp &7-&6 Teleports to a random terrain.'
-            on_help_json:
-              hover_text: '&aClick to teleport &c(DELAY).'
-              click_type: 'SUGGEST_COMMAND'
-              click_action: '/clan rtp'
-            on_success: '%tag% &aYou have been teleported to a random location!!'
-            on_error: '%tag% &cUse &6/clan rtp'
-        sound:
-            on_help: ''
-            on_success: ''
-            on_error: ''
-            extra:
-              volume: 10
-              pitch: 1
-      landinfo:
-        permission: 'uclans.player.landinfo'
-        no_permission_message: '%tag% &cYou dont have permission for this.'
-        alias: 'landinfo'
-        show:
-            on_help: ' &6/clan landinfo &7-&6 Shows terrain information.'
-            on_help_json:
-              hover_text: '&aClick view.'
-              click_type: 'SUGGEST_COMMAND'
-              click_action: '/clan landinfo'
-            on_success: '%tag% &aYou have been teleported to a random location!!'
-            on_error: '%tag% &cUse &6/clan landinfo'
-        sound:
-            on_help: ''
-            on_success: ''
-            on_error: ''
-            extra:
-              volume: 10
-              pitch: 1
-      base:
-        permission: 'uclans.player.base'
-        no_permission_message: '%tag% &cYou dont have permission for this.'
-        alias: 'base'
-        show:
-            on_help: ' &6/clan base <number> [tag] &7-&6 Teleports to a land of clan.'
-            on_help_json:
-              hover_text: '&aClick to teleport.'
-              click_type: 'SUGGEST_COMMAND'
-              click_action: '/clan base 1'
-            on_success: '%tag% &aYou were teleported to the base of the clan'
-            on_error: '%tag% &cUse &6/clan base <number> [tag]'
-        sound:
-            on_help: ''
-            on_success: ''
-            on_error: ''
-            extra:
-              volume: 10
-              pitch: 1
-      claim:
-        permission: 'uclans.player.claim'
-        no_permission_message: '%tag% &cYou dont have permission for this.'
-        alias: 'claim'
-        show:
-            on_help: ' &6/clan claim &7-&6 Claim the terrain where you are.'
-            on_help_json:
-              hover_text: '&aClick to claim.'
-              click_type: 'SUGGEST_COMMAND'
-              click_action: '/clan claim'
-            on_success: '%tag% &aThe land has been protected'
-            on_error: '%tag% &cUse &6/clan claim'
-        sound:
-            on_help: ''
-            on_success: ''
-            on_error: ''
-            extra:
-              volume: 10
-              pitch: 1
-      unclaimall:
-        permission: 'uclans.player.unclaimall'
-        no_permission_message: '%tag% &cYou dont have permission for this.'
-        alias: 'unclaimall'
-        show:
-            on_help: ' &6/clan unclaimall &7-&6 Unclain all clan lands.'
-            on_help_json:
-              hover_text: '&aClick to unclaim.'
-              click_type: 'SUGGEST_COMMAND'
-              click_action: '/clan unclaimall'
-            on_success: '%tag% &aAll land has been unclaimed'
-            on_error: '%tag% &cUse &6/clan unclaimall'
-        sound:
-            on_help: ''
-            on_success: ''
-            on_error: ''
-            extra:
-              volume: 10
-              pitch: 1
-      unclaim:
-        permission: 'uclans.player.unclaim'
-        no_permission_message: '%tag% &cYou dont have permission for this.'
-        alias: 'unclaim'
-        show:
-            on_help: ' &6/clan unclaim &7-&6 Unclaim the terrain you are on.'
-            on_help_json:
-              hover_text: '&aClick to unclaim.'
-              click_type: 'SUGGEST_COMMAND'
-              click_action: '/clan unclaim'
-            on_success: '%tag% &aThe land has been unclaimed'
-            on_error: '%tag% &cUse &6/clan unclaim'
-        sound:
-            on_help: ''
-            on_success: ''
-            on_error: ''
-            extra:
-              volume: 10
-              pitch: 1
-      landlist:
-        permission: 'uclans.player.landlist'
-        no_permission_message: '%tag% &cYou dont have permission for this.'
-        alias: 'landlist'
-        show:
-            on_help: ' &6/clan landlist &7-&6 Show your land list.'
+            on_help: ' &6/land &7-&6 Shows land options.'
             on_help_json:
               hover_text: '&aClick to view.'
               click_type: 'SUGGEST_COMMAND'
-              click_action: '/clan landlist'
-            on_success: '%tag% &aYou are viewing the list of land'
-            on_error: '%tag% &cUse &6/clan landlist'
+              click_action: '/land'
+            on_success: '%tag% &aYou are seeing the land options'
+            on_error: '%tag% &cUse &6/land'
         sound:
             on_help: ''
             on_success: ''
@@ -1004,25 +909,6 @@ Commands:
             on_success: '%tag% &aYou have verified a clan!'
             on_error: '%tag% &cUse &4/uclan verify <tag>'
             raw_base_color: 'DARK_RED'
-        sound:
-            on_help: ''
-            on_success: ''
-            on_error: ''
-            extra:
-              volume: 10
-              pitch: 1
-      rtp:
-        permission: 'uclans.admin.rtp'
-        no_permission_message: '%tag% &cYou dont have permission for this.'
-        alias: 'random'
-        show:
-            on_help: ' &4/clan rtp <player> &7-&e Teleports a player without delay.'
-            on_help_json:
-              hover_text: '&aClick to teleport &c(NO DELAY).'
-              click_type: 'SUGGEST_COMMAND'
-              click_action: '/clan rtp <player>'
-            on_success: '%tag% &aYou have been teleported to a random location!!'
-            on_error: '%tag% &cUse &6/clan rtp <player>'
         sound:
             on_help: ''
             on_success: ''
