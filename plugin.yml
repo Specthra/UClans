@@ -1,10 +1,10 @@
 name: UClans
 main: me.ulrich.clans.Clans
-version: 1.0.2
+version: 1.1.7
 author: UlrichBR
 description: The best and most complete system of clans and lands.
 api-version: 1.16
-softdepend: [Vault, PlaceholderAPI, WorldEdit]
+softdepend: [Vault, PlaceholderAPI, PrototolLib]
 commands:
    uclan:
       description: Open the help staff menu.
@@ -32,11 +32,18 @@ Permissions:
       uclans.admin.verify: true
       uclans.admin.rtp: true
       uclans.admin.reload: true
+      uclans.admin.wand: true
+      uclans.admin.clearwand: true
+      uclans.admin.addregion: true
+      uclans.admin.removeregion: true
+      uclans.admin.listregions: true
+      uclans.admin.tpregion: true
   uclans.player.*:
     children: 
       uclans.player.help: true
       uclans.player.create: true
       uclans.player.desc: true
+      uclans.player.name: true
       uclans.player.disband: true
       uclans.player.leave: true
       uclans.player.invite: true
@@ -58,10 +65,3 @@ Permissions:
       uclans.player.rivalries: true
       uclans.player.ally: true
       uclans.player.alliances: true
-      uclans.player.rtp: true
-      uclans.player.landinfo: true
-      uclans.player.base: true
-      uclans.player.claim: true
-      uclans.player.unclaimall: true
-      uclans.player.unclaim: true
-      uclans.player.landlist: true
