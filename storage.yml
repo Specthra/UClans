@@ -12,11 +12,6 @@ Storage:
     holograms_table: 'uclans-holos'
     bases_table: 'uclans-bases'
   tables:
-    uclans-bases:
-      id: 'u_id'
-      type: 'u_type'
-      owner: 'u_owner'
-      chunks: 'u_chunks'
     uclans-clans:
       id: 'u_id'
       tag: 'u_tag'
@@ -37,7 +32,6 @@ Storage:
       souls: 'u_souls'
       kdr: 'u_kdr'
       ff: 'u_ff'
-      chunks: 'u_chunks'
     uclans-players:
       id: 'u_id'
       name: 'u_name'
