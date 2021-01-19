@@ -1,95 +1,6 @@
 Gui:
-  land:
-    inventory_name: 'List of Bases  [%page%]'
-    inventory_rows: 5
-    sound-open: ''
-    max_items: 36
-    items:
-      current:
-        sound-click: '' #example BLOCK_ANVIL_LAND:1
-        itemstack: 'GRASS'
-        skullowner: ''
-        texture: ''
-        data: 0
-        amount: 1
-        slot: 0
-        name: '&aGround n° %number%'
-        lore:
-        - ''
-        - ' &eClick to teleport to this land.'
-        - ' &ePosition&b: %chunk%'
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - '[closegui]'
-        - '[player] /clan base %chunk%'
-        right-action:
-        - '[closegui]'
-        - '[player] /clan base %chunk%'
-      prev:
-        sound-click: ''
-        itemstack: 'INK_SACK'
-        skullowner: ''
-        texture: ''
-        data: 8
-        amount: 1
-        slot: 38
-        name: '&cPrevious page'
-        lore:
-        - ''
-        - ' &eClick to go back.'
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - '[opengui_land] %prev%'
-        right-action:
-        - '[opengui_land] %prev%'
-      next:
-        sound-click: ''
-        itemstack: 'INK_SACK'
-        skullowner: ''
-        texture: ''
-        data: 8
-        amount: 1
-        slot: 42
-        name: '&cNext page'
-        lore:
-        - ''
-        - ' &eClick to proceed.'
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - '[opengui_land] %next%'
-        right-action:
-        - '[opengui_land] %next%'
-      back:
-        sound-click: ''
-        itemstack: 'ARROW'
-        skullowner: ''
-        texture: ''
-        data: 0
-        amount: 1
-        slot: 40
-        name: '&cCome back'
-        lore:
-        - ''
-        - ' &eClick to go back.'
-        enchants:
-        - ''
-        flags:
-        - ''
-        left-action:
-        - '[opengui] index_land'
-        right-action:
-        - '[opengui] index_land'
   members:
-    inventory_name: 'Member List [%page%]'
+    inventory_name: 'Member List [Pg: %page%]'
     inventory_rows: 5
     sound-open: ''
     max_items: 27
@@ -111,6 +22,9 @@ Gui:
         - ' &7Kdr: &b%player_kills%&8/&b%player_deaths% &8(%player_kdr%)'
         - ' &7Entry into: &b%player_join_date%'
         - ' &7Last Seen: &b%player_seen_date%'
+        - ' '
+        - ' &cLEFT CLICK to /tpa'
+        - ' &cRIGHT CLICK to kick the player'
         enchants:
         - ''
         flags:
@@ -120,7 +34,7 @@ Gui:
         - '[player] /tpa %player%'
         right-action:
         - '[closegui]'
-        - '[player] /tpa %player%'
+        - '[player] /clan kick %player%'
       prev:
         sound-click: ''
         itemstack: 'INK_SACK'
